@@ -1,5 +1,9 @@
 package at.yawk.informatikwettbewerb.verben;
 
+/**
+ * Partizip Präsens, Aktiv (schweig<i>end</i>)
+ * @author Jonalu
+ */
 public class PartizipPraesensAktiv implements Regel {
 	
 	@Override

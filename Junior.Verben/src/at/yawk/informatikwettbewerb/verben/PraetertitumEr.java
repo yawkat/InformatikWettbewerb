@@ -1,5 +1,8 @@
 package at.yawk.informatikwettbewerb.verben;
 
+/**
+ * Präteritum dritte Person Singular (leite<i>te</i>)
+ */
 public class PraetertitumEr implements Regel {
 
 	@Override

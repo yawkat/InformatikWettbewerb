@@ -1,5 +1,8 @@
 package at.yawk.informatikwettbewerb.verben;
 
+/**
+ * Grundform als übergebenes Verb
+ * */
 public class Grundform implements Regel {
 
 	@Override

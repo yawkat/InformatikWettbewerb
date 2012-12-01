@@ -13,13 +13,18 @@ public class Rechner {
 	 * @return Maximalh&ouml;he
 	 */
 	public static int berechneHoeheFürGebaeude(final Point[] grundriss, final int entfernungRaster, final int rasterErhoehung, final int ausgangsHoehe) {
+		// Koordinatenursprung
 		final Point mitte = new Point();
+		
+		// kleinste Entfernung der Eckpunkte zu Koordinatenursprung
 		double minimumEntfernung = Double.MAX_VALUE;
 		for(final Point koordinate : grundriss)
 			minimumEntfernung = Math.min(minimumEntfernung, mitte.distance(koordinate));
 		
+		// Entfernung in Rasterschritten
 		final int minimumEntfernungRaster = (int)minimumEntfernung / entfernungRaster;
 		
+		// Gesamthöhe
 		return minimumEntfernungRaster * rasterErhoehung + ausgangsHoehe;
 	}
 	

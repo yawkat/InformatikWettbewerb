@@ -1,5 +1,8 @@
 package at.yawk.informatikwettbewerb.verben;
 
+/**
+ * Perfekt dritte Person Singular (<i>ge</i>forsch<i>t</i>)
+ */
 public class PerfektEr implements Regel {
 	
 	@Override

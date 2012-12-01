@@ -1,5 +1,8 @@
 package at.yawk.informatikwettbewerb.verben;
 
+/**
+ * Spezielle Sonderformen die nicht in eigenen Regeln implementiert sind
+ * */
 public class Sonderformen implements Regel {
 	private String[][]	sonderformen	= { { "mitgehalten", "mithalt" }, { "genehmigt", "genehmig" }, { "arbeite", "arbeit" }, { "gebet", "bet" } };
 	

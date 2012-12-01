@@ -5,8 +5,13 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Regeln {
+	/** Regeln in Anwendungsreihenfolge, erste Regel wird zuerst überprüft */
 	private static List<Regel>	regeln	= Arrays.asList(new Sonderformen(), new PraesensDu(), new PraetertitumEr(), new PerfektEr(), new PartizipPraesensAktiv(), new Grundform(), new Imperativ());
 	
+	/** überprüfe Regeln
+	 * @param form Ausgangsform
+	 * @return Grundform
+	 *  */
 	private static String getVerb(String form) {
 		for(final Regel r : regeln) {
 			if(r.kannVerwendetWerden(form)) {

@@ -1,5 +1,8 @@
 package at.yawk.informatikwettbewerb.verben;
 
+/**
+ * Im Zweifel Imperativ
+ */
 public class Imperativ implements Regel {
 
 	@Override

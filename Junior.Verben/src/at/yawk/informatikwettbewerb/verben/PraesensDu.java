@@ -1,5 +1,8 @@
 package at.yawk.informatikwettbewerb.verben;
 
+/**
+ * Präsens zweite Person Singular (sag<i>st</i>)
+ */
 public class PraesensDu implements Regel {
 
 	@Override
