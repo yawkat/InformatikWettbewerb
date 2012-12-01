@@ -46,26 +46,11 @@ final class Generator {
 				f.getParentFile().mkdirs();
 			final OutputStream os = new FileOutputStream(f);
 			
-			System.out.println("Generating 3 * 4 ^ " + iterations + " (" + (int)(3 * Math.pow(4, iterations)) + ") lines");
+			System.out.println("Generating 4 ^ " + iterations + " (" + (int)(3 * Math.pow(4, iterations)) + ") lines");
 			
 			final SVGImage svgi = new SVGImage();
 			{
-				// generiere Linie unten links
-				System.out.println("Generating Part A");
-				final KochLine beginLine = new KochLine((byte)1, new Point2D.Double(1, 1), 1, false);
-				for(final SVGLine s : beginLine.getChildLines(iterations, 1D / scale))
-					svgi.addElement(s);
-			}
-			{
-				// generiere Linie unten rechts
-				System.out.println("Generating Part B");
-				final KochLine beginLine = new KochLine((byte)2, new Point2D.Double(2, 1), 1, true);
-				for(final SVGLine s : beginLine.getChildLines(iterations, 1D / scale))
-					svgi.addElement(s);
-			}
-			{
-				// generiere Linie oben
-				System.out.println("Generating Part C");
+				// generiere Linie
 				final KochLine beginLine = new KochLine((byte)0, new Point2D.Double(1, 1), 1, true);
 				for(final SVGLine s : beginLine.getChildLines(iterations, 1D / scale))
 					svgi.addElement(s);

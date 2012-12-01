@@ -33,6 +33,6 @@ public class SVGLine implements SVGElement {
 	 * {@inheritDoc}
 	 */
 	public String getXmlRepresentative(double scaleFactor, String color) {
-		return "<line x1=\"" + Math.round(line.getX1() * scaleFactor) + "\" y1=\"" + Math.round(line.getY1() * scaleFactor) + "\" x2=\"" + Math.round(line.getX2() * scaleFactor) + "\" y2=\"" + Math.round(line.getY2() * scaleFactor) + "\" stroke=\"" + color + "\" stroke-width=\"" + Math.round(relativeLineWidth * scaleFactor) + "\"/>";
+		return "<line x1=\"" + line.getX1() * scaleFactor + "\" y1=\"" + line.getY1() * scaleFactor + "\" x2=\"" + line.getX2() * scaleFactor + "\" y2=\"" + line.getY2() * scaleFactor + "\" stroke=\"" + color + "\" stroke-width=\"" + Math.round(relativeLineWidth * scaleFactor) + "\"/>";
 	}
 }
