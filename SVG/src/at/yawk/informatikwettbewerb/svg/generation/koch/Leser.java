@@ -16,8 +16,26 @@ import javax.xml.stream.XMLStreamReader;
 import at.yawk.informatikwettbewerb.svg.image.SVGImage;
 import at.yawk.informatikwettbewerb.svg.image.SVGLine;
 
+/**
+ * Leseklasse für eine Koch-Kurve: Liest SVG mit (horizontaler) Koch-Kurve ein,
+ * berechnet Position der Kurve und speichert neue Kurve mit einem weiteren
+ * Schritt
+ * 
+ * @author Jonas Konrad
+ * @version 1.0
+ */
 public class Leser {
+	/**
+	 * @param args
+	 *            Kommandozeilen-Parameter
+	 * @throws IOException
+	 *             Wenn ein Fehler beim Lesen der Eingabedatei oder beim
+	 *             Erstellen oder Schreiben der Ausgabedatei auftritt
+	 * @throws XMLStreamException
+	 *             Wenn ein Fehler beim Parsen der Eingabedatei auftritt
+	 */
 	public static void main(String[] args) throws IOException, XMLStreamException {
+		// überprüfe Argumente
 		if(args.length == 2) {
 			// bereite Lesen vor
 			final InputStream ausgangsDatei = new FileInputStream(args[0]);

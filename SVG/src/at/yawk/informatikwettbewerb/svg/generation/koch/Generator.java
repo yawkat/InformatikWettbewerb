@@ -10,7 +10,7 @@ import at.yawk.informatikwettbewerb.svg.image.SVGImage;
 import at.yawk.informatikwettbewerb.svg.image.SVGLine;
 
 /**
- * Generatorklasse für eine Schneeflockenkurve
+ * Generatorklasse für eine Koch-Kurve
  * 
  * @author Jonas Konrad
  * @version 1.0
