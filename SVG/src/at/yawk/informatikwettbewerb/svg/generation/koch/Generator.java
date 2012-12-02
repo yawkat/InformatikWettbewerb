@@ -51,7 +51,7 @@ final class Generator {
 			final SVGImage svgi = new SVGImage();
 			{
 				// generiere Linie
-				final KochLine beginLine = new KochLine((byte)0, new Point2D.Double(1, 1), 1, true);
+				final KochLine beginLine = new KochLine((byte)0, new Point2D.Double(0, 1), 1, true);
 				for(final SVGLine s : beginLine.getChildLines(iterations, 1D / scale))
 					svgi.addElement(s);
 			}
